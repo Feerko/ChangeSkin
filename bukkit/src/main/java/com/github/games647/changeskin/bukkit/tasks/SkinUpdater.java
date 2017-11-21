@@ -201,9 +201,6 @@ public class SkinUpdater implements Runnable {
         health.getIntegers().write(0, receiver.getFoodLevel());
 
         sendPackets(removeInfo, addInfo, respawn, teleport, health);
-
-        String encodedValue = targetSkin.getEncodedValue();
-        plugin.getLog().info("Updated player {} skin {} {}", receiver.getName(), encodedValue, targetSkin);
     }
 
     private void sendPackets(PacketContainer... packets) {

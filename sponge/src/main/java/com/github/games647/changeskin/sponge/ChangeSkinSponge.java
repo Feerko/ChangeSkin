@@ -69,7 +69,7 @@ public class ChangeSkinSponge implements PlatformPlugin<CommandSource> {
         commandManager.register(this, CommandSpec.builder()
                 .executor(injector.getInstance(SelectCommand.class))
                 .arguments(string(of("skinName")))
-                .build(), "skin-select");
+                .build(), "skin-select", "skinselect");
 
         commandManager.register(this, CommandSpec.builder()
                 .executor(injector.getInstance(UploadCommand.class))
